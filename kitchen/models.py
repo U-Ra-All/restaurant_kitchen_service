@@ -8,8 +8,6 @@ class Cook(AbstractUser):
     years_of_experience = models.IntegerField(null=True, blank=True)
 
     class Meta:
-        verbose_name = "cook"
-        verbose_name_plural = "cooks"
         ordering = ["username"]
 
     def __str__(self):
@@ -41,6 +39,7 @@ class Dish(models.Model):
     cooks = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="dishes")
 
     class Meta:
+        verbose_name_plural = "dishes"
         ordering = ["name"]
 
     def __str__(self):

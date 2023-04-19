@@ -24,6 +24,10 @@ def index(request):
     return render(request, "kitchen/index.html", context=context)
 
 
+class CookListView(generic.ListView):
+    model = Cook
+
+
 class DishTypeListView(generic.ListView):
     model = DishType
     template_name = "kitchen/dish_type_list.html"
