@@ -1,9 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.views import generic
 
 from kitchen.models import Cook, Dish, DishType
 
 
+@login_required
 def index(request):
     """View function for the home page of the site."""
 
