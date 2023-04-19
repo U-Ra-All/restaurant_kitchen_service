@@ -26,5 +26,5 @@ def index(request):
 
 class DishTypeListView(generic.ListView):
     model = DishType
-    template_name = "kitchen/dish_view.html"
+    template_name = "kitchen/dish_type_list.html"
     context_object_name = "dish_type_list"
