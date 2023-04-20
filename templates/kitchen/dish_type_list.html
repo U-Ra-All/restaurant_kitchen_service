@@ -2,11 +2,19 @@
 {% block content %}
     <h1>Dish Type List</h1>
     {% if dish_type_list %}
-      <ul>
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Dish Type</th>
+        </tr>
         {% for dish_type in dish_type_list %}
-          <li>{{ dish_type }}</li>
+          <tr>
+            <td>{{ dish_type.id }}</td>
+            <td><a href="{{ dish_type.get_absolute_url }}">{{ dish_type.name }}</a></td>
+          </tr>
         {% endfor %}
-      </ul>
+      </table>
     {% else %}
       <p>There are no dish types in kitchen</p>
     {% endif %}
