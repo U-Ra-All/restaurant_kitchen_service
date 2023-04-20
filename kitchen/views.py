@@ -69,3 +69,8 @@ class DishListView(LoginRequiredMixin, generic.ListView):
 class DishDetailView(LoginRequiredMixin, generic.DetailView):
     model = Dish
     queryset = Dish.objects.prefetch_related("cooks__dishes")
+
+
+class DishCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Dish
+    fields = "__all__"
