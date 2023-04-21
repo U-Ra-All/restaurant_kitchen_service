@@ -22,6 +22,7 @@ class CookUpdatingForm(forms.ModelForm):
     class Meta(UserCreationForm.Meta):
         model = Cook
         fields = (
+            "username",
             "first_name",
             "last_name",
             "years_of_experience"
