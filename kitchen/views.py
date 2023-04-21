@@ -4,7 +4,14 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
-from kitchen.forms import CookCreationForm, CookUpdatingForm, CookSearchForm, DishTypeSearchForm, DishSearchForm, DishAssignOrDeleteForm
+from kitchen.forms import (
+    CookCreationForm,
+    CookUpdatingForm,
+    CookSearchForm,
+    DishTypeSearchForm,
+    DishSearchForm,
+    DishAssignOrDeleteForm,
+)
 from kitchen.models import Cook, Dish, DishType
 
 
@@ -37,9 +44,9 @@ class CookListView(LoginRequiredMixin, generic.ListView):
         context = super(CookListView, self).get_context_data(**kwargs)
         username = self.request.GET.get("username_", "")
 
-        context["search_form"] = CookSearchForm(initial={
-            "username_": username
-        })
+        context["search_form"] = CookSearchForm(
+            initial={"username_": username}
+        )
 
         return context
 
@@ -85,9 +92,7 @@ class DishTypeListView(LoginRequiredMixin, generic.ListView):
         context = super(DishTypeListView, self).get_context_data(**kwargs)
         name = self.request.GET.get("name", "")
 
-        context["search_form"] = DishTypeSearchForm(initial={
-            "name": name
-        })
+        context["search_form"] = DishTypeSearchForm(initial={"name": name})
 
         return context
 
@@ -96,9 +101,7 @@ class DishTypeListView(LoginRequiredMixin, generic.ListView):
         form = DishTypeSearchForm(self.request.GET)
 
         if form.is_valid():
-            return queryset.filter(
-                name__icontains=form.cleaned_data["name"]
-            )
+            return queryset.filter(name__icontains=form.cleaned_data["name"])
 
         return queryset
 
@@ -139,9 +142,7 @@ class DishListView(LoginRequiredMixin, generic.ListView):
         context = super(DishListView, self).get_context_data(**kwargs)
         name = self.request.GET.get("name", "")
 
-        context["search_form"] = DishSearchForm(initial={
-            "name": name
-        })
+        context["search_form"] = DishSearchForm(initial={"name": name})
 
         return context
 
@@ -150,9 +151,7 @@ class DishListView(LoginRequiredMixin, generic.ListView):
         form = DishSearchForm(self.request.GET)
 
         if form.is_valid():
-            return queryset.filter(
-                name__icontains=form.cleaned_data["name"]
-            )
+            return queryset.filter(name__icontains=form.cleaned_data["name"])
 
         return queryset
 

@@ -11,7 +11,7 @@ class CookCreationForm(UserCreationForm):
         fields = UserCreationForm.Meta.fields + (
             "first_name",
             "last_name",
-            "years_of_experience"
+            "years_of_experience",
         )
 
     def clean(self):
@@ -21,12 +21,7 @@ class CookCreationForm(UserCreationForm):
 class CookUpdatingForm(forms.ModelForm):
     class Meta(UserCreationForm.Meta):
         model = Cook
-        fields = (
-            "username",
-            "first_name",
-            "last_name",
-            "years_of_experience"
-        )
+        fields = ("username", "first_name", "last_name", "years_of_experience")
 
     def clean(self):
         validate_years_of_experience(self.cleaned_data)
@@ -35,13 +30,9 @@ class CookUpdatingForm(forms.ModelForm):
 def validate_years_of_experience(cleaned_data):
     years_of_experience = cleaned_data["years_of_experience"]
 
-    if (
-            years_of_experience < 0 or
-            years_of_experience > 80
-    ):
+    if years_of_experience < 0 or years_of_experience > 80:
         raise ValidationError(
-            "Number of years of experience must be "
-            "between 0 and 80"
+            "Number of years of experience must be " "between 0 and 80"
         )
 
     return years_of_experience
@@ -52,7 +43,9 @@ class CookSearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(attrs={"placeholder": "Search by username..."})
+        widget=forms.TextInput(
+            attrs={"placeholder": "Search by username..."}
+        ),
     )
 
 
@@ -61,7 +54,9 @@ class DishSearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(attrs={"placeholder": "Search by dish name..."})
+        widget=forms.TextInput(
+            attrs={"placeholder": "Search by dish name..."}
+        ),
     )
 
 
@@ -70,7 +65,9 @@ class DishTypeSearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(attrs={"placeholder": "Search by dish type name..."})
+        widget=forms.TextInput(
+            attrs={"placeholder": "Search by dish type name..."}
+        ),
     )
 
 
