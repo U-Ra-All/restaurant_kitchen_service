@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
 
-from kitchen.models import Cook
+from kitchen.models import Cook, Dish
 
 
 class CookCreationForm(UserCreationForm):
@@ -73,3 +73,8 @@ class DishTypeSearchForm(forms.Form):
         widget=forms.TextInput(attrs={"placeholder": "Search by dish type name..."})
     )
 
+
+class DishAssignOrDeleteForm(forms.ModelForm):
+    class Meta:
+        model = Dish
+        fields = []
