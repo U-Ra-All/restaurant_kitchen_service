@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from kitchen.models import Cook
+from kitchen.models import Cook, DishType
 
 
 class CookModelTest(TestCase):
@@ -48,4 +48,25 @@ class CookModelTest(TestCase):
         cook = Cook.objects.get(id=1)
         # This will also fail if the urlconf is not defined.
         self.assertEqual(cook.get_absolute_url(), "/cooks/1/")
+        
+        
+class DishTypeModelTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        DishType.objects.create(name="test")
+
+    def test_name_label(self):
+        dish_type = DishType.objects.get(id=1)
+        field_label = dish_type._meta.get_field("name").verbose_name
+        self.assertEqual(field_label, "name")
+
+    def test_dish_type_str(self):
+        dish_type = DishType.objects.get(id=1)
+        expected_object_name = f"{dish_type.name}"
+        self.assertEqual(str(dish_type), expected_object_name)
+
+    def test_get_absolute_url(self):
+        dish_type = DishType.objects.get(id=1)
+        # This will also fail if the urlconf is not defined.
+        self.assertEqual(dish_type.get_absolute_url(), "/dish-types/1/")
 
