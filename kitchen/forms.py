@@ -45,3 +45,31 @@ def validate_years_of_experience(cleaned_data):
         )
 
     return years_of_experience
+
+
+class CookSearchForm(forms.Form):
+    username_ = forms.CharField(
+        max_length=255,
+        required=False,
+        label="",
+        widget=forms.TextInput(attrs={"placeholder": "Search by username..."})
+    )
+
+
+class DishSearchForm(forms.Form):
+    name = forms.CharField(
+        max_length=255,
+        required=False,
+        label="",
+        widget=forms.TextInput(attrs={"placeholder": "Search by dish name..."})
+    )
+
+
+class DishTypeSearchForm(forms.Form):
+    name = forms.CharField(
+        max_length=255,
+        required=False,
+        label="",
+        widget=forms.TextInput(attrs={"placeholder": "Search by dish type name..."})
+    )
+
