@@ -12,7 +12,8 @@ class CookCreationFormTest(TestCase):
         form = CookCreationForm()
         self.assertTrue(
             (form.fields["years_of_experience"].label is None
-             or form.fields["years_of_experience"].label == "Years of experience")
+             or form.fields["years_of_experience"].label ==
+             "Years of experience")
         )
 
     def test_cook_create_form_years_of_experience_is_negative(self):
@@ -60,7 +61,8 @@ class CookUpdatingFormTest(TestCase):
         form = CookUpdatingForm()
         self.assertTrue(
             (form.fields["years_of_experience"].label is None
-             or form.fields["years_of_experience"].label == "Years of experience")
+             or form.fields["years_of_experience"].label ==
+             "Years of experience")
         )
 
     def test_cook_update_form_years_of_experience_is_negative(self):

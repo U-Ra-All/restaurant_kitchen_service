@@ -48,8 +48,8 @@ class CookModelTest(TestCase):
         cook = Cook.objects.get(id=1)
         # This will also fail if the urlconf is not defined.
         self.assertEqual(cook.get_absolute_url(), "/cooks/1/")
-        
-        
+
+
 class DishTypeModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
