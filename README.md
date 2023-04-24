@@ -10,34 +10,34 @@ Django project for managing restaurant kitchen with cooks, dishes and dish types
 
 Python3 must be already installed
 
-'''shell
+```shell
 git clone https://github.com/U-Ra-All/restaurant-kitchen-service.git
 cd restaurant_kitchen_service
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python3 manage.py runserver # starts Django Server
-'''
+```
 
 Create a file called .env in the same folder as the settings file. 
 Make sure to have the following development-specific values in there.
 
-'''shell
+```shell
 SECRET_KEY = "Your_Super_Secret_Key"
-'''
+```
 
 Install dotenv to read the contents 
 of this file into environment variables.
 
-'''shell
+```shell
 pip install python-dotenv
-'''
+```
 
 Edit the settings.py file to contain the following. 
 Notice that I prepend the setting names with the APPNAME_ 
 to avoid potential conflicting names.
 
-'''shell
+```shell
 from dotenv import load_dotenv
 # Load sensitive environment-specific settings from .env file
 # Does not override existing System variables by default.
@@ -46,7 +46,7 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # ... rest of settings.py
-'''
+```
 
 ## Features
 
