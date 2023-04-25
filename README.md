@@ -29,13 +29,6 @@ SECRET_KEY = "Your_Super_Secret_Key"
 Install dotenv to read the contents 
 of this file into environment variables.
 
-```shell
-pip install python-dotenv
-```
-
-Edit the settings.py file to contain the following. 
-Notice that I prepend the setting names with the APPNAME_ 
-to avoid potential conflicting names.
 
 ```shell
 from dotenv import load_dotenv
@@ -46,6 +39,21 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # ... rest of settings.py
+```
+
+## Load data
+
+Use the following command to load prepared data from fixture to test and debug your code:
+
+```shell
+python manage.py loaddata cinema_db_data.json.
+```
+
+After loading data from fixture you can use following superuser (or create another one by yourself):
+
+```shell
+Login: admin.user
+Password: 7QancRe2
 ```
 
 ## Features

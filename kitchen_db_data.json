@@ -1,0 +1,405 @@
+[
+{
+  "model": "kitchen.cook",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$4iVDDFkEbTuGDB9gwhtqFG$DrqPhmK4mRk8/wOe2HNRnQ5IA4mJIQHoWDmaMy/wulQ=",
+    "last_login": "2023-04-24T14:10:32.960Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-04-18T08:35:04Z",
+    "years_of_experience": 5,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.cook",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$qi4NTwlpgz8I8BTR8Ar54j$oYvCh3OSzb0EvnAyNVLm1Z/0WqUlbYPn+ZiH2Dd2tz4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "joyce.byers",
+    "first_name": "Joyce",
+    "last_name": "Byers",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-18T11:38:50.250Z",
+    "years_of_experience": 8,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.cook",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$hsdDxOp6xu3yWPwpYhsR1B$qvnG24QclgZxPAuXQZGAzYa+HmmHAKK9zOkXWx8RRmA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "jim.hopper",
+    "first_name": "Jim",
+    "last_name": "Hopper",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-18T11:40:17.845Z",
+    "years_of_experience": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.cook",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ukUttUg8cMvLJo7qsxZM58$EI7OzWTSnFTY5CzKY7Amya36vESdMUz5JHYmM1DKl18=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "jonathan.byers",
+    "first_name": "Jonathan",
+    "last_name": "Byers",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-18T11:41:01Z",
+    "years_of_experience": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.cook",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$7VRWYB3sFNHfgzq64bCfXT$y6VaqVFuaScuabaXvHhErNPw8w8SAF+DtlkO+jgAPVY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dustin.henderson",
+    "first_name": "Dustin",
+    "last_name": "Henderson",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-18T11:42:01.583Z",
+    "years_of_experience": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.cook",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$pXEz8JxteHp3KTyhfSnZRl$DFDTPvK1giW7Xdc/Ij3ue7lb9rLPqHqAGtenNvEEfFU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "youraall",
+    "first_name": "Yuriy",
+    "last_name": "Allakhverdov",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-20T13:42:30.824Z",
+    "years_of_experience": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 1,
+  "fields": {
+    "name": "Biscuits"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 2,
+  "fields": {
+    "name": "Braai"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 4,
+  "fields": {
+    "name": "Cakes"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 5,
+  "fields": {
+    "name": "Curries"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 6,
+  "fields": {
+    "name": "Desserts"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 7,
+  "fields": {
+    "name": "Pasta"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 8,
+  "fields": {
+    "name": "Pizza"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 9,
+  "fields": {
+    "name": "Japanese"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 10,
+  "fields": {
+    "name": "Soups"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 11,
+  "fields": {
+    "name": "Salad"
+  }
+},
+{
+  "model": "kitchen.dishtype",
+  "pk": 12,
+  "fields": {
+    "name": "Bread"
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 1,
+  "fields": {
+    "name": "Sushi",
+    "description": "Prepared with vinegared rice and a wide range of ingredients including seafood, vegetables, and sometimes fruits. Sushi tastes best when served with wasabi, pickled ginger, and soy sauce. A popular garnish for this dish is Daikon radish. The type of fish in it defines a sushi's taste. However, the vinegared rice gives the dish a tangy taste overall. Tuna, eel, and Salmon tend to have a light flavour while octopus flavoured sushi is generally strong in taste.",
+    "price": "30.50",
+    "dish_type": 9,
+    "cooks": [
+      1
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 2,
+  "fields": {
+    "name": "Rendang",
+    "description": "Often called \"the world's most delicious dish,\" Rendang is prepared by simmering beef with coconut milk with a mixture of the best of spices including turmeric, garlic, lemongrass, ginger, chillies, and galangal. The dish is then stewed for a few hours which gives it a tender texture and exotic taste. The blast of flavours is surely one of the reasons why the dish is loved globally and is also one of the best dishes in the world. Easy to rustle up, this dish is often served at ceremonies or to honour guests.",
+    "price": "20.00",
+    "dish_type": 2,
+    "cooks": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 3,
+  "fields": {
+    "name": "Ramen",
+    "description": "If not tried, you must have heard of Ramen at least once in your life. However, we are not talking about the packaged instant noodles. Ramen is a Japanese dish made of wheat noodles and served in the broth along with vegetables and meat. Ramen comes in several flavours, from tangy to spicy, depending on the flavour of the broth. Every region in Japan has it's own. Tonkotsu, a popular style of ramen includes pork bone broth and the miso ramen, another popular dish originated in Hokkaido.",
+    "price": "25.00",
+    "dish_type": 9,
+    "cooks": [
+      2
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 4,
+  "fields": {
+    "name": "Kebab",
+    "description": "A dish popular across the Middle East, Kebabs are originally from Turkey. They consist of ground meat or seafood, fruits, and vegetables in some cases and are cooked on a skewer with a big fire underneath, just like a barbeque on the grill. It is cooked with various accompanying ingredients including garlic, black pepper, and vegetable oil. Mutton or lambs are generally the traditional meats used in kebabs. Other recipes include beef, goat, fish, and chicken as well. This dish has a perfect blend of taste, ranging from tangy to spicy, making it one of the best dishes in the world.",
+    "price": "20.00",
+    "dish_type": 2,
+    "cooks": [
+      5,
+      3,
+      4,
+      2
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 5,
+  "fields": {
+    "name": "Paella",
+    "description": "Paella has got its roots in Valencia, Spain. It is an ancient dish recreated with a modern touch in the present times. There are various ways to eat Paella. The original recipe contains white rice with green beans, meat (rabbit or chicken, sometimes duck), butterbeans, snails, topped with seasoning such as rosemary and. The recipe also uses artichokes during its season. Another very common but seasonal ingredient is artichokes. Cooked in olive oil in a pan, the dish is full of flavours and hence one of the best dishes in the world.",
+    "price": "20.00",
+    "dish_type": 5,
+    "cooks": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 6,
+  "fields": {
+    "name": "Apfelstrudel",
+    "description": "More commonly known as Apple Strudel, Apfelstrudel is a popular pastry in Austria and other parts of Europe. The dish consists of an oval strudel pastry cover with mouthwatering apple filling inside. The apple filling is prepared with grated apples, cinnamon, sugar, breadcrumbs, and raisins. This delicacy tastes best when served with vanilla ice cream and whipped cream. You can experiment with vanilla sauce instead of ice cream and custard instead of cream to try new flavours. Apfelstrudel can be served any time accompanied by coffee, tea, or even champagne and is widely found at Viennese cafes.",
+    "price": "28.00",
+    "dish_type": 6,
+    "cooks": [
+      1,
+      5,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 7,
+  "fields": {
+    "name": "Steak and Kidney Pie",
+    "description": "The Brits love their pies. And why wouldn't they? Steak and kidney pie is a piquant pie filled with diced beef, kidney (often of lamb, beef, or pork), brown gravy, and fried onion. It is a representative dish of British cuisine and culture. The gravy is made up of ale, flavoured beef broth, and cornstarch. There are special pastry crusts prepared for the pie such as puff pastry, hot water crust pastry, and shortcut pastry. Although quite expensive (the authentic ones), the dish is worth trying once even if you are not a pie fan.",
+    "price": "31.00",
+    "dish_type": 4,
+    "cooks": [
+      1,
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 8,
+  "fields": {
+    "name": "Pad Thai",
+    "description": "A common street food dish all over Thailand, Pad Thai is a stir-fried rice dish accompanied with noodles. This healthy dish is made with stir-frying noodles with eggs and tofu. What brings out the flavour from the dish is the unique blend of sauces - tamarind pulp, dried shrimp and fish sauce and garnished with garlic and red chillii pepper. The dish is served along with roasted peanuts and lime wedges. There are extra ingredients that are provided on the side such as radishes, bean sprouts, and other vegetables. Pad Thai also has a vegetarian version which consists of soy sauce instead of fish sauce and doesn't include any meat.",
+    "price": "15.00",
+    "dish_type": 7,
+    "cooks": [
+      3
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 9,
+  "fields": {
+    "name": "Neapolitan Pizza",
+    "description": "Neapolitan is the original pizza. This delicious pie dates all the way back to 18th century in Naples, Italy. During this time, the poorer citizens of this seaside city frequently purchased food that was cheap and could be eaten quickly. Luckily for them, Neapolitan pizza was affordable and readily available through numerous street vendors.\r\nThe typical Neapolitan pizza toppings are fresh mozzarella, tomatoes, basil leaves, oregano, and olive oil. Since Neapolitan pizza is thin, it isn't designed to handle the weight of too many toppings. In fact, Neapolitan pizza is so thin that it's typically eaten with a fork and knife.",
+    "price": "15.00",
+    "dish_type": 8,
+    "cooks": [
+      2
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 10,
+  "fields": {
+    "name": "Sicilian Pizza",
+    "description": "Sicilian pizza, also known as \"sfincione,\" provides a thick cut of pizza with pillowy dough, a crunchy crust, and robust tomato sauce. This square-cut pizza is served with or without cheese, and often with the cheese underneath the sauce to prevent the pie from becoming soggy. Sicilian pizza was brought to America in the 19th century by Sicilian immigrants and became popular in the United States after the Second World War.\r\nSicilian pizzas are often topped with bits of tomato, onion, anchovies, and herbs.",
+    "price": "18.00",
+    "dish_type": 8,
+    "cooks": [
+      5,
+      3,
+      4,
+      2
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 11,
+  "fields": {
+    "name": "California Pizza",
+    "description": "California pizza, or gourmet pizza, is known for its unusual ingredients. This pizza got its start back in the late 1970’s when Chef Ed LaDou began experimenting with pizza recipes in the classic Italian restaurant, Prego. He created a pizza with mustard, ricotta, pate, and red pepper, and by chance, served it to Wolfgang Puck. Impressed with LaDou’s innovative pie, Puck invited him to be a head pizza chef at his restaurant. It was here that LaDou came up with over 250 unique pizza recipes that eventually formed the menu of the chain restaurant California Pizza Kitchen.\r\nWhen it comes to California pizza, there's no such thing as traditional toppings. This lack of specificity allows you to get inventive. You can include anything from chicken and artichokes to goat cheese and egg.",
+    "price": "23.00",
+    "dish_type": 8,
+    "cooks": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 12,
+  "fields": {
+    "name": "Angel Hair Pasta",
+    "description": "The long, delicate strands of angel hair pasta (aka capellini) are best served in light or creamy sauces. The thin strands can go M.I.A. in chunky, meaty sauces.",
+    "price": "11.00",
+    "dish_type": 7,
+    "cooks": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 13,
+  "fields": {
+    "name": "Bow Tie Pasta (Farfalle)",
+    "description": "Use bow tie pasta to dress up any dish that calls for small pasta shapes, such as penne or shells. Also known as farfalle.",
+    "price": "11.00",
+    "dish_type": 7,
+    "cooks": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 14,
+  "fields": {
+    "name": "Fettuccine Pasta",
+    "description": "Fettuccine is an egg pasta cut into long, narrow ribbons. It is often served with cream sauces, as in the classic Fettuccine Alfredo. You can use fettuccine in any recipe that calls for linguine or spaghetti.",
+    "price": "17.00",
+    "dish_type": 7,
+    "cooks": [
+      3
+    ]
+  }
+},
+{
+  "model": "kitchen.dish",
+  "pk": 15,
+  "fields": {
+    "name": "Super salad platter",
+    "description": "Both quinoa and cashew nuts are high in the mineral copper, which our bodies need for everything from immune and nervous system function to efficiently transporting iron around.",
+    "price": "11.00",
+    "dish_type": 11,
+    "cooks": [
+      1,
+      5
+    ]
+  }
+}
+]
