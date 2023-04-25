@@ -16,6 +16,7 @@ cd restaurant_kitchen_service
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+python3 manage.py migrate
 python3 manage.py runserver # starts Django Server
 ```
 
@@ -24,21 +25,6 @@ Make sure to have the following development-specific values in there.
 
 ```shell
 SECRET_KEY = "Your_Super_Secret_Key"
-```
-
-Install dotenv to read the contents 
-of this file into environment variables.
-
-
-```shell
-from dotenv import load_dotenv
-# Load sensitive environment-specific settings from .env file
-# Does not override existing System variables by default.
-# To override, use load_dotenv(override=True)
-load_dotenv()
-SECRET_KEY = os.getenv("SECRET_KEY")
-
-# ... rest of settings.py
 ```
 
 ## Load data
