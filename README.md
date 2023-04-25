@@ -11,7 +11,7 @@ Django project for managing restaurant kitchen with cooks, dishes and dish types
 Python3 must be already installed
 
 ```shell
-git clone https://github.com/U-Ra-All/restaurant-kitchen-service.git
+git clone https://github.com/U-Ra-All/restaurant_kitchen_service.git
 cd restaurant_kitchen_service
 python3 -m venv venv
 source venv/bin/activate
@@ -32,10 +32,10 @@ SECRET_KEY = "Your_Super_Secret_Key"
 Use the following command to load prepared data from fixture to test and debug your code:
 
 ```shell
-python manage.py loaddata kitchen_db_data.json.
+python manage.py loaddata kitchen_db_data.json
 ```
 
-After loading data from fixture you can use following superuser (or create another one by yourself):
+After loading data from fixture you can use the following superuser (or create another one by yourself):
 
 ```shell
 Login: admin.user
