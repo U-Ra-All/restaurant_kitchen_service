@@ -46,7 +46,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 Use the following command to load prepared data from fixture to test and debug your code:
 
 ```shell
-python manage.py loaddata cinema_db_data.json.
+python manage.py loaddata kitchen_db_data.json.
 ```
 
 After loading data from fixture you can use following superuser (or create another one by yourself):
