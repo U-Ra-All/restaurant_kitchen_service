@@ -27,15 +27,7 @@ Make sure to have the following development-specific values in there.
 SECRET_KEY = "Your_Super_Secret_Key"
 ```
 
-## Load data
-
-Use the following command to load prepared data from fixture to test and debug your code:
-
-```shell
-python manage.py loaddata kitchen_db_data.json
-```
-
-After loading data from fixture you can use the following superuser (or create another one by yourself):
+You can use the following superuser (or create another one by yourself):
 
 ```shell
 Login: admin.user
