@@ -352,14 +352,6 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "99n7u25atcblxyumkm55av0rgypf1req",
-  "fields": {
-    "session_data": ".eJxVjE0OgyAYBe_CuiE-EBWX3fcMBPig0h9IRLtpevdq4qLdvpk3b2bsukxmrWE2idjIwE6_m7P-HvIO6GbztXBf8jInx3eFH7TyS6HwOB_uX2CyddreXkcVSTYEAZLQwmtCrwhWqwZONqLtED0i9DCEQQpFrleud4gdRKu2aF6f5pVqWiob8fkCMZ48Mw:1psJJ6:nwwJLZXuVaDHyFJqsrtATPE3WUPRqNvciGmxU7kXMBo",
-    "expire_date": "2023-05-12T08:18:20.386Z"
-  }
-},
-{
   "model": "kitchen.cook",
   "pk": 1,
   "fields": {
