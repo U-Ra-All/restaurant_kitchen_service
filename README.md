@@ -4,7 +4,7 @@ Django project for managing restaurant kitchen with cooks, dishes and dish types
 
 ## Check it out!
 
-[Restaurant kitchen project deployed to Render](PASTE_LINK_HERE)
+[Restaurant kitchen project deployed to Render](https://restaurant-kitchen-project.onrender.com/)
 
 ## Installation
 
